@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="stylesheet" href="./style.css" />
+  <meta charset="utf-8">
+  <title>Aoe2 Log</title>
+</head>
+
+<header>
+  <div class="container">
+    <h1>Aoe2 Log</h1>
+    <nav>
+      <ul>
+        <li><a href="#">New Log</a></li>
+        <li><a href="#">Logs</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<body>
+  <div class="grid">
+    <section>
+      <input type="text" class="civ" value="Your Civ">
+      <input type="text" class="civ" value="Opponents Civ">
+    </section>
+
+    <section class="darkage">
+      <h2>Dark Age</h2>
+      <label for="darkagebuildings" class="buildingmenu">Buildings built in Dark Age</label>
+      <select id="darkagebuildings" class="buildingmenu">
+        <option value="barracks">barracks</option>
+        <option value="mill">mill</option>
+      </select>
+      <input type="submit" name="addbuilding" value="add">
+    </section>
+
+    <section class="feudalage">
+      <h2>Feudal Age</h2>
+      <div class="villagercount">
+        <label for="villagercount" class="villagercount">What is the villager difference between you
+          and opponent?</label>
+        <input type="text" class="villagercount" name="villagercount" value="+-0">
+      </div>
+      <div class="buildinglog">
+        <label for="feudalbuildings" class="buildingmenu">Buildings built in Dark Age</label>
+        <select id="feudalbuildings" class="buildingmenu">
+          <option value="barracks">barracks</option>
+          <option value="mill">mill</option>
+        </select>
+        <input type="submit" name="addbuilding" value="add">
+      </div>
+    </section>
+
+    <section class="castleage">
+      <h2>Castle Age</h2>
+      <div class="villagercount">
+        <label for="villagercount">What is the villager difference between you
+          and opponent?</label>
+        <input type="text" class="villagercount" name="villagercount" value="+-0">
+      </div>
+      <div class="buildinglog">
+        <label for="castlebuildings" class="buildingmenu">Buildings built in Dark Age</label>
+        <select id="castlebuildings" class="buildingmenu">
+          <option value="barracks">barracks</option>
+          <option value="mill">mill</option>
+        </select>
+        <input type="submit" name="addbuilding" value="add">
+      </div>
+    </section>
+
+    <section class="imperialage">
+      <h2>Imperial Age</h2>
+      <div class="villagercount">
+        <label for="villagercount">What is the villager difference between you
+          and opponent?</label>
+        <input type="text" class="villagercount" name="villagercount" value="+-0">
+      </div>
+      <div class="buildinglog">
+        <label for="imperialbuildings" class="buildingmenu">Buildings built in Dark Age</label>
+        <select id="imperialbuildings" class="buildingmenu">
+          <option value="barracks">barracks</option>
+          <option value="mill">mill</option>
+        </select>
+        <input type="submit" name="addbuilding" value="add">
+      </div>
+    </section>
+
+    <section class="extranotes">
+      <label for="notesbox">Extra Notes</label>
+      <textarea id="notesbox" name="notesbox"></textarea>
+    </section>
+  </div>
+
+</body>
+
+</html>
