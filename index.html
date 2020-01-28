@@ -7,36 +7,38 @@
   <title>Aoe2 Log</title>
 </head>
 
-<header>
-  <div class="container">
-    <h1>Aoe2 Log</h1>
-    <nav>
-      <ul>
-        <li><a href="#">New Log</a></li>
-        <li><a href="#">Logs</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+
+
+
 
 <body>
   <div class="grid">
-    <section>
+    <div class="header">
+      <h1>Aoe2 Log</h1>
+      <nav>
+        <ul>
+          <li><a href="#">New Log</a></li>
+          <li><a href="#">Logs</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="civs">
       <input type="text" class="civ" value="Your Civ">
       <input type="text" class="civ" value="Opponents Civ">
-    </section>
+    </div>
 
-    <section class="darkage">
+   <div class="darkage">
       <h2>Dark Age</h2>
-      <label for="darkagebuildings" class="buildingmenu">Buildings built in Dark Age</label>
-      <select id="darkagebuildings" class="buildingmenu">
+      <label for="darkagebuildings" >Buildings built in Dark Age</label>
+      <select id="darkagebuildings" >
         <option value="barracks">barracks</option>
         <option value="mill">mill</option>
       </select>
       <input type="submit" name="addbuilding" value="add">
-    </section>
+    </div>
 
-    <section class="feudalage">
+    <div class="feudalage">
       <h2>Feudal Age</h2>
       <div class="villagercount">
         <label for="villagercount" class="villagercount">What is the villager difference between you
@@ -51,9 +53,9 @@
         </select>
         <input type="submit" name="addbuilding" value="add">
       </div>
-    </section>
+    </div>
 
-    <section class="castleage">
+    <div class="castleage">
       <h2>Castle Age</h2>
       <div class="villagercount">
         <label for="villagercount">What is the villager difference between you
@@ -68,9 +70,9 @@
         </select>
         <input type="submit" name="addbuilding" value="add">
       </div>
-    </section>
+    </div>
 
-    <section class="imperialage">
+    <div class="imperialage">
       <h2>Imperial Age</h2>
       <div class="villagercount">
         <label for="villagercount">What is the villager difference between you
@@ -85,12 +87,16 @@
         </select>
         <input type="submit" name="addbuilding" value="add">
       </div>
-    </section>
+    </div>
 
-    <section class="extranotes">
+    <div class="extranotes">
       <label for="notesbox">Extra Notes</label>
       <textarea id="notesbox" name="notesbox"></textarea>
-    </section>
+    </div>
+  </div>
+
+  <div class="footer">
+    TEXT
   </div>
 
 </body>
