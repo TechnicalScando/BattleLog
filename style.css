@@ -10,10 +10,14 @@
   grid-template-rows: repeat(7, 1fr);
   grid-template-columns: 400px 400px;
   justify-content: center;
+  justify-items: center;
 }
 
 .header {
   grid-area: head;
+  border: 3px solid gray;
+  padding: 30px;
+  justify-self: stretch;
 }
 
 .darkage {
@@ -32,10 +36,54 @@
   grid-area: imp;
 }
 
-.extranotes {
-  grid-area: extranotes;
+.civs{
+  grid-area: civs;
+  margin: 30px 30px;
+  padding: 30px 30px;
 }
 
-.foot {
-  grid-area: head;
+.extranotes {
+  grid-area: extranotes;
+  margin: 30px 30px;
+  padding: 30px 30px;
+}
+
+.footer {
+  grid-area: foot;
+  border: 3px solid gray;
+  justify-self: stretch;
+}
+
+
+h1 {
+  float: left;
+  align-self: center;
+}
+
+h2 {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+ul {
+  float: right;
+}
+
+select {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+input {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+label {
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+
+div{
+  font-family: sans-serif;
 }
